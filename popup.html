@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 10px;
+      }
+      .chat-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .message {
+        background-color: #f1f1f1;
+        padding: 8px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+      .user-message {
+        align-self: flex-end;
+        background-color: #d1f1d1;
+      }
+      .ai-message {
+        align-self: flex-start;
+        background-color: #f1d1d1;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>AI Reply Bot</h3>
+    <div class="chat-container" id="chatContainer">
+      <div class="message ai-message">Hello! How can I help you today?</div>
+    </div>
+    <input type="text" id="userMessage" placeholder="Type a message..." />
+    <button id="sendMessage">Send</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
